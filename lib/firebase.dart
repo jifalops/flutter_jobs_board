@@ -27,7 +27,7 @@ Future<QuerySnapshot> fetchCollection(String path) =>
 /// Gets the current user or signs in anonymously.
 /// If `null` is returned, there was likely a network error.
 Future<FirebaseUser> getUser() async =>
-    (await auth.currentUser()) ?? googleSignIn();
+    (await auth.currentUser()) ?? auth.signInAnonymously();
 
 /// Upgrade an anonymous account by linking it to a Google account.
 Future<FirebaseUser> googleSignIn() async {
@@ -70,5 +70,5 @@ Future<String> uploadImage() async {
       source: ImageSource.gallery, maxWidth: 600, maxHeight: 400);
   StorageReference reference = storage.ref().child("images/");
   StorageUploadTask uploadTask = reference.putFile(image);
-  return (await uploadTask.onComplete).ref.getDownloadURL().toString();
+  return await (await uploadTask.onComplete).ref.getDownloadURL();
 }

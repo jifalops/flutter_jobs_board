@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "961626787639",
+    "firebase_url": "https://flutter-jobs-board.firebaseio.com",
+    "project_id": "flutter-jobs-board",
+    "storage_bucket": "flutter-jobs-board.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961626787639:android:1c81db9f1651e92d",
+        "android_client_info": {
+          "package_name": "com.flutterjobsboard.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961626787639-cfbqevkcjsbfa0bl3qv06tn7ri5kq3r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVaHa1AJIuAHr1lNMXz864sB9Huaayf-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961626787639-cfbqevkcjsbfa0bl3qv06tn7ri5kq3r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
